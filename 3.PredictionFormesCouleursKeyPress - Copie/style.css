@@ -1,20 +1,25 @@
-/* html{
+html, body {
   background-color: #CCC;
   font-size:55pt ;
-  
-} */
+}
 
+canvas {
+  display: block;
 
+  margin:0 auto;
+  position:relative;
+}
 
-/* .qsd{
-  margin-left:auto;
+#test{
+  text-align: center;
   display:block;
   margin:0 auto;
   position:relative;
-    
-    
-} */
+}
 
+div{
+  text-align: center;
+}
 
 
 
@@ -31,4 +36,4 @@
       width: 90%;
       height:45%;
   }
-} */
+}

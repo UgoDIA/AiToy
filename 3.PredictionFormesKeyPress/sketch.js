@@ -3,7 +3,7 @@ let canvas;
 let resultsDiv;
 let clearButton;
 let video;
-resultsDiv=document.getElementById("resultsDiv").innerHTML
+
 function setup() {
   canvas=createCanvas(400, 400);
   video=createCapture(VIDEO);
@@ -32,7 +32,7 @@ function setup() {
 
 function modelLoaded(){
   console.log("modèle prêt")
-  resultsDiv.html("Modèle prêt")
+  
   keyPressed();
 }
 

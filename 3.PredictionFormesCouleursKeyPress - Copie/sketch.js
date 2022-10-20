@@ -35,8 +35,8 @@ function setup() {
   // clearButton.mousePressed(function(){
   //   background(255);
   // });
-  // resultsDiv=createDiv('chargement du modèle');
-  // resultsDivCoul=createDiv();
+  resultsDiv=createDiv('chargement du modèle');
+  resultsDivCoul=createDiv();
   shapeClassifier.load(modelDetails, modelLoaded);
   CouleurClassifier.load(modelDetailsCoul,modelLoaded);
   video.hide();
@@ -63,8 +63,8 @@ function gotResults(errz, results){
   }
   let label=results[0].label;
   let confidence=nf(100*results[0].confidence,2,0 );
-  // resultsDiv.html(`${label} ${confidence}%`)
-  document.getElementById("test").innerHTML= label + " "+ confidence + "%" ;
+  resultsDiv.html(`${label} ${confidence}%`)
+  // document.getElementById("test").innerhtml= label + " "+ confidence + "%" ;
   console.log(results);
   
   
@@ -77,10 +77,9 @@ function gotResultsCoul(err, results){
   }
   let label=results[0].label;
   let confidence=nf(100*results[0].confidence,2,0 );
-  document.getElementById("test").innerHTML= label + " " + confidence +"%";
-  // resultsDivCoul.html(`${label} ${confidence}%`)
+  // document.getElementById("test").innerhtml= label + " " + confidence +"%";
+  resultsDivCoul.html(`${label} ${confidence}%`)
   console.log(results);
-  console.log()
 
 }
 

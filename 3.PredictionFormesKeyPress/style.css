@@ -5,4 +5,14 @@ html, body {
 
 canvas {
   display: block;
+
+  margin:0 auto;
+  position:relative;
+}
+
+#test{
+  text-align: center;
+  display:block;
+  margin:0 auto;
+  position:relative;
 }
